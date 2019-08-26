@@ -126,3 +126,112 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Raleway", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Red Hat Display", sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  max-width: 115rem;
+  margin: auto;
+}
+header {
+  background-color: #49beb7;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 60rem;
+  font-size: 1.6rem;
+  color: #ebefd0;
+  text-transform: uppercase;
+}
+footer p {
+  text-align: center;
+  margin-top: 14rem;
+  font-size: 1.4rem;
+}
+.homepage .textandimage {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.homepage .textandimage h1 {
+  font-size: 5.6rem;
+  max-width: 40rem;
+  color: #49beb7;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 4rem;
+}
+.homepage .textandimage p {
+  font-size: 2rem;
+  color: #49beb7;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.homepage .textandimage button {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  background-color: #ff502f;
+  color: #ffffff;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.homepage .textandimage img {
+  max-width: 52rem;
+  margin-top: 4rem;
+  margin-left: 8rem;
+}
