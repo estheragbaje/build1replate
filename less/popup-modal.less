@@ -1,0 +1,48 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  .flex(center, center);
+
+  .modal-content {
+    background-color: white;
+    max-width: 740px;
+    width: 100%;
+    padding: 4rem 8rem;
+
+    h5 {
+      font-size: @heading-default;
+      color: @regular-font-color;
+      font-family: @text-font-family;
+      .marginY(2);
+      font-weight: 600;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    label {
+      font-family: @text-font-family;
+      color: @headline-font-color;
+      font-size: @text-big;
+      font-weight: 300;
+    }
+
+    input {
+      width: 100%;
+      .paddingY(1);
+      .paddingX(2);
+      .marginTop(1);
+      .marginBottom(2.5);
+      border: 0.2rem solid @navigation-font-color;
+      font-size: @text-default;
+    }
+
+    button {
+      .buttonStyle;
+      .marginTop(2);
+    }
+  }
+}
