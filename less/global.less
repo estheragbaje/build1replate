@@ -50,7 +50,12 @@ a {
   color: inherit;
 }
 
-.container {
-  max-width: 115rem;
-  margin: auto;
+// .container {
+//   max-width: 115rem;
+//   margin: auto;
+
+  @media @mobile {
+    width: 100%;
+    max-width: 40rem;
+  }
 }

@@ -5,6 +5,10 @@ header {
   .container {
     .flex();
 
+    @media @mobile {
+      .flexColumn;
+    }
+
     nav {
       .flex();
       width: 100%;
@@ -12,6 +16,10 @@ header {
       font-size: @text-default;
       color: @navigation-font-color;
       text-transform: uppercase;
+
+      @media @mobile {
+        .marginTop(2);
+      }
     }
   }
 }

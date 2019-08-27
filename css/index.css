@@ -41,6 +41,10 @@
   font-family: "Raleway", sans-serif;
   color: #49beb7;
 }
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -214,6 +218,12 @@ a {
   max-width: 115rem;
   margin: auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    max-width: 40rem;
+  }
+}
 header {
   background-color: #49beb7;
   padding-top: 2rem;
@@ -224,6 +234,12 @@ header .container {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 header .container nav {
   display: flex;
   justify-content: space-between;
@@ -233,6 +249,11 @@ header .container nav {
   font-size: 1.6rem;
   color: #ebefd0;
   text-transform: uppercase;
+}
+@media (max-width: 500px) {
+  header .container nav {
+    margin-top: 2rem;
+  }
 }
 .dashboard .profile-pic {
   display: flex;
@@ -250,12 +271,23 @@ footer p {
   font-size: 1.4rem;
   font-family: "Raleway", sans-serif;
 }
+@media (max-width: 500px) {
+  footer p {
+    margin-top: 5rem;
+  }
+}
 .homepage .textandimage {
   margin-top: 3rem;
   margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .homepage .textandimage {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .homepage .textandimage h1 {
   font-size: 5.6rem;
@@ -266,6 +298,12 @@ footer p {
   line-height: 1.2;
   margin-top: 4rem;
 }
+@media (max-width: 500px) {
+  .homepage .textandimage h1 {
+    font-size: 3.2rem;
+    margin-top: 1rem;
+  }
+}
 .homepage .textandimage p {
   font-size: 2rem;
   color: #49beb7;
@@ -274,7 +312,14 @@ footer p {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.homepage .textandimage button {
+@media (max-width: 500px) {
+  .homepage .textandimage p {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+.homepage .textandimage .homepage-button {
   padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 6rem;
@@ -284,10 +329,41 @@ footer p {
   font-size: 2rem;
   text-transform: uppercase;
 }
+@media (max-width: 500px) {
+  .homepage .textandimage .homepage-button {
+    display: none;
+  }
+}
 .homepage .textandimage img {
   max-width: 52rem;
   margin-top: 4rem;
   margin-left: 8rem;
+}
+@media (max-width: 500px) {
+  .homepage .textandimage img {
+    margin-left: 0rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin-top: 1rem;
+  }
+}
+.homepage-button2 {
+  display: none;
+}
+@media (max-width: 500px) {
+  .homepage-button2 {
+    display: block;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    background-color: #ff502f;
+    color: #ffffff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 3rem;
+  }
 }
 .signup h1 {
   font-size: 4.8rem;
