@@ -4,6 +4,33 @@
   align-items: @align;
 }
 
+// .heading-style(@font-weight: 300, @marginY(2), font-size: @headline-mid) {
+//   font-size: @headline-mid;
+//   color: @regular-font-color;
+//   font-family: @text-font-family;
+//   font-weight: 300;
+//   .marginY(2);
+//   text-align: center;
+// }
+
+// .buttonStyle(.paddingY(@scale), .paddingX(@scale)) {
+//   .paddingY(2);
+//   .paddingX(6);
+//   background-color: @button-color;
+//   color: @button-font-color;
+//   font-size: @headline-mid;
+//   text-transform: uppercase;
+// }
+
+.buttonStyle {
+  .paddingY(2);
+  .paddingX(6);
+  background-color: @button-color;
+  color: @button-font-color;
+  font-size: @headline-mid;
+  text-transform: uppercase;
+}
+
 .width(@scale) {
   width: @spacing-base * @scale;
 }

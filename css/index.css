@@ -1,3 +1,13 @@
+.buttonStyle {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  background-color: #ff502f;
+  color: #ffffff;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -234,4 +244,58 @@ footer p {
   max-width: 52rem;
   margin-top: 4rem;
   margin-left: 8rem;
+}
+.signup h1 {
+  font-size: 4.8rem;
+  text-align: center;
+  color: #49beb7;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.signup h2 {
+  font-size: 2rem;
+  color: #49beb7;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.signup .choose-category {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.signup .choose-category .choose-category-options img {
+  margin-bottom: 2rem;
+}
+.signup .choose-category .choose-category-options h3 {
+  font-size: 2rem;
+  color: #49beb7;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.signup .choose-category .choose-category-options p {
+  font-size: 1.6rem;
+  color: #49beb7;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+.signup .choose-category .choose-category-options button {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: #ff502f;
+  color: #ffffff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }

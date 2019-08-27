@@ -1,0 +1,57 @@
+.signup {
+  h1 {
+    font-size: @heading-big;
+    text-align: center;
+    color: @headline-font-color;
+    font-weight: 600;
+    .marginY(3);
+  }
+
+  h2 {
+    font-size: @headline-mid;
+    color: @regular-font-color;
+    font-family: @text-font-family;
+    font-weight: 300;
+    .marginY(2);
+    text-align: center;
+  }
+
+  .choose-category {
+    display: flex;
+    justify-content: space-between;
+    .marginY(3);
+
+    .choose-category-options {
+      img {
+        .marginBottom(2);
+      }
+
+      h3 {
+        font-size: @headline-mid;
+        color: @regular-font-color;
+        font-family: @text-font-family;
+        font-weight: 600;
+        .marginY(1);
+        text-align: center;
+      }
+
+      p {
+        font-size: @text-default;
+        color: @regular-font-color;
+        font-family: @text-font-family;
+        font-weight: 300;
+        text-align: center;
+      }
+
+      button {
+        .paddingY(1.5);
+        .paddingX(4);
+        background-color: @button-color;
+        color: @button-font-color;
+        font-size: @headline-mid;
+        text-transform: uppercase;
+        .marginX(4);
+      }
+    }
+  }
+}
