@@ -8,26 +8,40 @@
     <title>Volunteer Sign up</title>
   </head>
   <body>
-    <div>
-      <img src="img/replate-logo.png" alt="" />
-      <h1>Volunteer Sign Up!</h1>
-      <h3>Thanks for your interest in being a volunteer</h3>
-    </div>
-    <div>
-      <h2>1. Create Your Account</h2>
-      <form>
-        Full Name:<br />
-        <input type="text" name="firstname" /><br />
-        Phone Number:<br />
-        <input type="text" name="lastname" /><br />
-        Email Address:<br />
-        <input type="text" name="firstname" /><br />
-        Password:<br />
-        <input type="text" name="firstname" /><br />
-        Repeat Password:<br />
-        <input type="text" name="firstname" /><br />
-        <button>Sign up</button>
-      </form>
+    <div class="sign-up-container">
+      <div class="text-section">
+        <div class="content">
+          <img src="img/replate-logo.png" alt="" />
+          <h1>Volunteer Sign Up!</h1>
+          <h3>Thanks for your interest</h3>
+          <br />
+          <h3>
+            You’re just one step away from joining the Replate Community as a
+            Volunteer!
+          </h3>
+        </div>
+      </div>
+      <div class="form-section">
+        <h2>1. Create Your Account</h2>
+        <form>
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" />
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" />
+
+          <label for="passwordconfirmation">Repeat Password</label>
+          <input type="password" id="passwordconfirmation" name="password" />
+
+          <button>Sign up</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

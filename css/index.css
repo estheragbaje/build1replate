@@ -299,3 +299,80 @@ footer p {
   margin-left: 4rem;
   margin-right: 4rem;
 }
+.sign-up-container {
+  min-height: 100vh;
+  display: flex;
+}
+.sign-up-container .text-section {
+  background-color: #49beb7;
+  max-width: 48rem;
+  width: 100%;
+}
+.sign-up-container .text-section .content {
+  margin: 0 auto;
+  max-width: 35rem;
+  width: 100%;
+}
+.sign-up-container .text-section .content img {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+.sign-up-container .text-section .content h1 {
+  font-size: 3.2rem;
+  color: #ffffff;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 4rem;
+}
+.sign-up-container .text-section .content h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  margin-top: 1rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+.sign-up-container .form-section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+.sign-up-container .form-section h2 {
+  font-size: 3.2rem;
+  color: #49beb7;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+.sign-up-container .form-section label {
+  font-family: "Raleway", sans-serif;
+  color: #49beb7;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+.sign-up-container .form-section input {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  border: 0.2rem solid #ebefd0;
+  font-size: 1.6rem;
+}
+.sign-up-container .form-section button {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  background-color: #ff502f;
+  color: #ffffff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}

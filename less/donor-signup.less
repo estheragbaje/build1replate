@@ -1,0 +1,75 @@
+.sign-up-container {
+  min-height: 100vh;
+  display: flex;
+
+  .text-section {
+    background-color: @header-background-color;
+    max-width: 48rem;
+    width: 100%;
+
+    .content {
+      margin: 0 auto;
+      max-width: 35rem;
+      width: 100%;
+
+      img {
+        .marginY(6);
+      }
+
+      h1 {
+        font-size: @heading-default;
+        color: @signup-font-color;
+        font-family: @heading-font-family;
+        font-weight: 600;
+        line-height: 1.2;
+        .marginTop(4);
+      }
+
+      h3 {
+        font-size: @text-big;
+        color: @signup-font-color;
+        font-family: @text-font-family;
+        .marginTop(1);
+        font-weight: 300;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  .form-section {
+    .marginY(3);
+    .marginX(10);
+
+    h2 {
+      font-size: @heading-default;
+      color: @headline-font-color;
+      font-family: @heading-font-family;
+      font-weight: 600;
+      line-height: 1.2;
+      .marginTop(4);
+      .marginBottom(1);
+    }
+
+    label {
+      font-family: @text-font-family;
+      color: @headline-font-color;
+      font-size: @text-big;
+      font-weight: 300;
+    }
+
+    input {
+      width: 100%;
+      .paddingY(1);
+      .paddingX(2);
+      .marginTop(1);
+      .marginBottom(2.5);
+      border: 0.2rem solid @navigation-font-color;
+      font-size: @text-default;
+    }
+
+    button {
+      .buttonStyle;
+      .marginTop(2);
+    }
+  }
+}
