@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://kit.fontawesome.com/874c5e9bf3.js"></script>
     <title>Dashboard</title>
   </head>
   <body>
     <header>
-      <img src="img/replate-logo.png" alt="" />
-      <div>
-        <h2>chefvys Restaurant</h2>
-        <img src="" alt="" />
+      <div class="dashboard container">
+        <div>
+          <img src="img/replate-logo.png" alt="" />
+        </div>
+        <div class="profile-pic">
+          <h2>Chefvys Restaurant</h2>
+          <img src="img/profile-pic2.png" alt="" />
+        </div>
       </div>
     </header>
-    <main>
+    <main class="main-dashboard">
       <section class="left-section">
         <div>
           <h1>My Dashboard</h1>
@@ -25,8 +30,12 @@
             <img src="img/location.png" alt="" />
           </div>
           <div>
-            <a href=""></a>
-            <h4>Add Another Location</h4>
+            <button class="icon-text">
+              <span class="btn-icon"
+                ><i class="fas fa-plus-circle fa-3x"></i
+              ></span>
+              <span class="btn-label">Add Another Location</span>
+            </button>
           </div>
           <div>
             <h3>Name</h3>
@@ -39,10 +48,10 @@
         </div>
       </section>
       <section class="right-section">
-        <div>
-          <a href=""></a>
-          <h4>Request for Pickup</h4>
-        </div>
+        <button class="icon-text2">
+          <span class="btn-icon"><i class="fas fa-plus-circle fa-3x"></i></span>
+          <span class="btn-label">Request for Pickup</span>
+        </button>
         <div>
           <table style="width:100%">
             <caption>
@@ -57,31 +66,55 @@
             <tr>
               <td>4/8 Monday</td>
               <td>Pickup at 6.00pm</td>
-              <td>Edit Delete</td>
+              <td>
+                <button class="edit">Edit</button>
+                <button>Delete</button>
+              </td>
             </tr>
             <tr>
               <td>4/9 Tuesday</td>
               <td>No pickup</td>
-              <td>Edit Delete</td>
+              <td>
+                <button class="edit">Edit</button>
+                <button>Delete</button>
+              </td>
             </tr>
             <tr>
               <td>4/10 Wednesday</td>
               <td>Pickup at 8.00pm</td>
-              <td>Edit Delete</td>
+              <td>
+                <button class="edit">Edit</button>
+                <button>Delete</button>
+              </td>
             </tr>
             <tr>
               <td>4/11 Thursday</td>
               <td>No pickup</td>
-              <td>Edit Delete</td>
+              <td>
+                <button class="edit">Edit</button>
+                <button>Delete</button>
+              </td>
             </tr>
             <tr>
               <td>4/12 Friday</td>
               <td>Pickup at 4.00pm</td>
-              <td>Edit Delete</td>
+              <td>
+                <button class="edit">Edit</button>
+                <button>Delete</button>
+              </td>
             </tr>
           </table>
         </div>
       </section>
     </main>
+    <footer>
+      <p>©2019 Copyright Esther Agbaje</p>
+    </footer>
+    <div class="modal-overlay">
+      <div class="modal-content">
+        <h5>Schedule New Pickup</h5>
+        
+      </div>
+    </div>
   </body>
 </html>
