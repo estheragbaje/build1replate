@@ -1038,3 +1038,104 @@ footer p {
   text-transform: uppercase;
   margin-top: 2rem;
 }
+@media (max-width: 500px) {
+  .modal-overlay .modal-content button {
+    width: 100%;
+  }
+}
+.data-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.data-search h2 {
+  font-size: 2rem;
+  color: #49beb7;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.data-search input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: 0.1rem solid #ebefd0;
+}
+.data-search div[role="tablist"] {
+  display: flex;
+}
+.data-search div[role="tablist"] button[role="tab"] {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: #ddd;
+  font-size: 15px;
+  min-width: 200px;
+}
+.data-search div[role="tablist"] button[role="tab"][aria-selected="true"] {
+  background: #49beb7;
+  color: #ffffff;
+}
+.data-search form [type="submit"] {
+  background-color: #f6f2f2;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.details-container .restaurant-detail {
+  font-size: 1.6rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.details-container .restaurant-detail .restaurant-name {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  max-width: 32rem;
+  width: 100%;
+}
+.details-container .restaurant-detail .restaurant-data {
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 0;
+  max-width: 32rem;
+  width: 100%;
+}
+.details-container .restaurant-detail .action {
+  flex: 1;
+  text-align: right;
+}
+.details-container .restaurant-detail .action button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  cursor: pointer;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  /* Remove excess padding and border in Firefox 4+ */
+  color: #ff502f;
+}
+.details-container .restaurant-detail .action button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.details-container .restaurant-detail .action button:hover {
+  text-decoration: underline;
+}
