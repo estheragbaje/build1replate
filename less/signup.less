@@ -1,5 +1,5 @@
 .signup {
-  h1 {
+  .signup-headline {
     font-size: @heading-big;
     text-align: center;
     color: @headline-font-color;
@@ -7,7 +7,7 @@
     .marginY(3);
 
     @media @mobile {
-      font-size: @heading-small;
+      font-size: @heading-big;
     }
   }
 
@@ -18,6 +18,10 @@
     font-weight: 300;
     .marginY(2);
     text-align: center;
+
+    @media @mobile {
+      line-height: 2.5rem;
+    }
   }
 
   .choose-category {

@@ -1,12 +1,12 @@
-header {
+.header-content {
   background-color: @header-background-color;
   .paddingY(2);
 
-  .container {
+  .nav-bar {
     .flex();
 
     @media @mobile {
-      .flexColumn;
+      .flexColumn();
     }
 
     nav {
@@ -22,16 +22,16 @@ header {
       }
     }
   }
-}
 
-.dashboard {
-  .profile-pic {
-    .flex();
+  .dashboard {
+    .profile-pic {
+      .flex();
 
-    h2 {
-      font-size: @heading-small;
-      color: @signup-font-color;
-      .marginRight(3);
+      h2 {
+        font-size: @heading-small;
+        color: @signup-font-color;
+        .marginRight(3);
+      }
     }
   }
 }
