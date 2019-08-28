@@ -36,6 +36,10 @@
     .choose-category-options {
       img {
         .marginBottom(2);
+
+        @media @mobile {
+          width: 100%;
+        }
       }
 
       h3 {
@@ -63,6 +67,12 @@
         font-size: @headline-mid;
         text-transform: uppercase;
         .marginX(4);
+
+        @media @mobile {
+          .marginX(0);
+          width: 100%;
+          .marginBottom(4);
+        }
       }
     }
   }
