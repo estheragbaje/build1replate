@@ -9,8 +9,8 @@
     <title>Dashboard</title>
   </head>
   <body>
-    <header>
-      <div class="dashboard container">
+    <header class="header-content">
+      <div class="container nav-bar">
         <div>
           <img src="img/replate-logo.png" alt="" />
         </div>
@@ -20,93 +20,206 @@
         </div>
       </div>
     </header>
-    <main class="main-dashboard">
-      <section class="left-section">
-        <div>
-          <h1>My Dashboard</h1>
-          <div>
-            <h3>Office Location</h3>
-            <p>Lagos, Nigeria</p>
-            <img src="img/location.png" alt="" />
-          </div>
-          <div>
-            <button class="icon-text">
+    <div class="container">
+      <main>
+        <div class="main-dashboard">
+          <section class="left-section">
+            <div>
+              <h1>My Dashboard</h1>
+              <div>
+                <h3>Office Location</h3>
+                <p>Lagos, Nigeria</p>
+                <img src="img/location.png" alt="" />
+              </div>
+              <div>
+                <button class="icon-text">
+                  <span class="btn-icon"
+                    ><i class="fas fa-plus-circle fa-3x"></i
+                  ></span>
+                  <span class="btn-label">Add Another Location</span>
+                </button>
+              </div>
+              <div>
+                <h3>Name</h3>
+                <p>Lade Smith</p>
+              </div>
+              <div>
+                <h3>Address</h3>
+                <p>2 Ribadu Street, Ikoyi Lagos</p>
+              </div>
+            </div>
+          </section>
+          <section class="right-section">
+            <button class="icon-text2">
               <span class="btn-icon"
                 ><i class="fas fa-plus-circle fa-3x"></i
               ></span>
-              <span class="btn-label">Add Another Location</span>
+              <span class="btn-label">Request for Pickup</span>
             </button>
-          </div>
-          <div>
-            <h3>Name</h3>
-            <p>Lade Smith</p>
-          </div>
-          <div>
-            <h3>Address</h3>
-            <p>2 Ribadu Street, Ikoyi Lagos</p>
-          </div>
-        </div>
-      </section>
-      <section class="right-section">
-        <button class="icon-text2">
-          <span class="btn-icon"><i class="fas fa-plus-circle fa-3x"></i></span>
-          <span class="btn-label">Request for Pickup</span>
-        </button>
-        <div>
-          <table style="width:100%">
-            <caption>
-              Pickup Schedule
-            </caption>
+            <div>
+              <table style="width:100%">
+                <caption>
+                  Pickup Schedule
+                </caption>
 
-            <tr>
-              <th>Date</th>
-              <th>Schedule</th>
-              <th></th>
-            </tr>
-            <tr>
-              <td>4/8 Monday</td>
-              <td>Pickup at 6.00pm</td>
-              <td>
-                <button class="edit">Edit</button>
-                <button>Delete</button>
-              </td>
-            </tr>
-            <tr>
-              <td>4/9 Tuesday</td>
-              <td>No pickup</td>
-              <td>
-                <button class="edit">Edit</button>
-                <button>Delete</button>
-              </td>
-            </tr>
-            <tr>
-              <td>4/10 Wednesday</td>
-              <td>Pickup at 8.00pm</td>
-              <td>
-                <button class="edit">Edit</button>
-                <button>Delete</button>
-              </td>
-            </tr>
-            <tr>
-              <td>4/11 Thursday</td>
-              <td>No pickup</td>
-              <td>
-                <button class="edit">Edit</button>
-                <button>Delete</button>
-              </td>
-            </tr>
-            <tr>
-              <td>4/12 Friday</td>
-              <td>Pickup at 4.00pm</td>
-              <td>
-                <button class="edit">Edit</button>
-                <button>Delete</button>
-              </td>
-            </tr>
-          </table>
+                <tr>
+                  <th>Date</th>
+                  <th>Schedule</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>4/8 Monday</td>
+                  <td>Pickup at 6.00pm</td>
+                  <td>
+                    <button class="edit">Edit</button>
+                    <button>Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4/9 Tuesday</td>
+                  <td>No pickup</td>
+                  <td>
+                    <button class="edit">Edit</button>
+                    <button>Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4/10 Wednesday</td>
+                  <td>Pickup at 8.00pm</td>
+                  <td>
+                    <button class="edit">Edit</button>
+                    <button>Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4/11 Thursday</td>
+                  <td>No pickup</td>
+                  <td>
+                    <button class="edit">Edit</button>
+                    <button>Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4/12 Friday</td>
+                  <td>Pickup at 4.00pm</td>
+                  <td>
+                    <button class="edit">Edit</button>
+                    <button>Delete</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </section>
         </div>
-      </section>
-    </main>
+        <div class="for-mobile hide">
+          <div>
+            <h1>My Dashboard</h1>
+            <div>
+              <h3>Name</h3>
+              <p>Lade Smith</p>
+            </div>
+            <div>
+              <h3>Address</h3>
+              <p>2 Ribadu Street, Ikoyi Lagos</p>
+            </div>
+            <div>
+              <h3>Office Location</h3>
+              <p>Lagos, Nigeria</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <button class="icon-text">
+                <span class="btn-icon"
+                  ><i class="fas fa-plus-circle fa-3x"></i
+                ></span>
+                <span class="btn-label">Add Another Location</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hide">
+          <button class="icon-text2">
+            <span class="btn-icon"
+              ><i class="fas fa-plus-circle fa-3x"></i
+            ></span>
+            <span class="btn-label">Request for Pickup</span>
+          </button>
+        </div>
+        <div class="table-bg">
+          <h2>Pickup Schedule</h2>
+        </div>
+
+        <div class="pickup-schedule">
+          <div>
+            <h3>Date</h3>
+          </div>
+          <div>
+            <h3>Schedule</h3>
+          </div>
+        </div>
+        <div class="pickup-schedule">
+          <div>
+            <h4>4/8 Monday</h4>
+          </div>
+          <div class="align-right">
+            <p>Pickup at 6.00pm</p>
+            <span>
+              <button class="edit">Edit</button>
+              <button>Delete</button>
+            </span>
+          </div>
+        </div>
+        <div class="pickup-schedule">
+          <div>
+            <h4>4/9 Tuesday</h4>
+          </div>
+          <div class="align-right">
+            <p>No pickup</p>
+            <span>
+              <button class="edit">Edit</button>
+              <button>Delete</button>
+            </span>
+          </div>
+        </div>
+        <div class="pickup-schedule">
+          <div>
+            <h4>4/10 Wednesday</h4>
+          </div>
+          <div class="align-right">
+            <p>Pickup at 8.00pm</p>
+            <span>
+              <button class="edit">Edit</button>
+              <button>Delete</button>
+            </span>
+          </div>
+        </div>
+        <div class="pickup-schedule">
+          <div>
+            <h4>4/11 Thursday</h4>
+          </div>
+          <div class="align-right">
+            <p>No pickup</p>
+            <span>
+              <button class="edit">Edit</button>
+              <button>Delete</button>
+            </span>
+          </div>
+        </div>
+        <div class="pickup-schedule">
+          <div>
+            <h4>4/12 Friday</h4>
+          </div>
+          <div class="align-right">
+            <p>Pickup at 4.00pm</p>
+            <span>
+              <button class="edit">Edit</button>
+              <button>Delete</button>
+            </span>
+          </div>
+        </div>
+      </main>
+    </div>
     <footer>
       <p>©2019 Copyright Esther Agbaje</p>
     </footer>

@@ -1,19 +1,45 @@
+.form-flex {
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .sign-up-container {
   min-height: 100vh;
   display: flex;
+
+  @media @mobile {
+    min-height: 20vh;
+  }
 
   .text-section {
     background-color: @header-background-color;
     max-width: 48rem;
     width: 100%;
 
+    @media @mobile {
+      max-width: 50rem;
+      .paddingBottom(2);
+    }
+
     .content {
       margin: 0 auto;
       max-width: 35rem;
       width: 100%;
 
+      @media @mobile {
+        .marginLeft(10);
+        text-align: center;
+      }
+
       img {
         .marginY(6);
+
+        @media @mobile {
+          .paddingY(2);
+          margin: auto;
+        }
       }
 
       h1 {
@@ -23,6 +49,11 @@
         font-weight: 600;
         line-height: 1.2;
         .marginTop(4);
+
+        @media @mobile {
+          .marginTop(0);
+          font-size: @mobile-heading;
+        }
       }
 
       h3 {
@@ -40,6 +71,10 @@
     .marginY(3);
     .marginX(10);
 
+    @media @mobile {
+      .marginX(5);
+    }
+
     h2 {
       font-size: @heading-default;
       color: @headline-font-color;
@@ -48,6 +83,10 @@
       line-height: 1.2;
       .marginTop(4);
       .marginBottom(1);
+
+      @media @mobile {
+        font-size: @mobile-heading;
+      }
     }
 
     label {
@@ -70,6 +109,11 @@
     button {
       .buttonStyle;
       .marginTop(2);
+
+      @media @mobile {
+        width: 100%;
+        .marginBottom(2);
+      }
     }
   }
 }
