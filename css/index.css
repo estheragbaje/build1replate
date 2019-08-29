@@ -8,6 +8,26 @@
   font-size: 2rem;
   text-transform: uppercase;
 }
+.buttonStyleAccept {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: #ff502f;
+  color: #ffffff;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.buttonStyleReject {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: #f6f2f2;
+  color: black;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
 .buttonReset {
   border: none;
   margin: 0;
@@ -992,7 +1012,10 @@ footer p {
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .modal-overlay .modal-content {
   background-color: white;
@@ -1009,6 +1032,19 @@ footer p {
   font-weight: 600;
   text-align: center;
   line-height: 1.4;
+}
+.modal-overlay .modal-content h6 {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.modal-overlay .modal-content .food-image {
+  width: 100%;
+  display: block;
+  margin-bottom: 2rem;
 }
 .modal-overlay .modal-content label {
   font-family: "Raleway", sans-serif;
@@ -1042,6 +1078,26 @@ footer p {
   .modal-overlay .modal-content button {
     width: 100%;
   }
+}
+.modal-overlay .modal-content .buttonStyleAccept {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: #ff502f;
+  color: #ffffff;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.modal-overlay .modal-content .buttonStyleReject {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: #f6f2f2;
+  color: black;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 .data-search {
   display: flex;
