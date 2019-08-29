@@ -3,6 +3,11 @@
   .marginTop(2);
   .marginBottom(4);
 
+  @media @mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   h2 {
     font-size: @headline-mid;
     color: @regular-font-color;
@@ -17,6 +22,10 @@
     margin-top: 8px;
     font-size: 17px;
     border: 0.1rem solid @cream;
+
+    @media @mobile {
+      .marginTop(0);
+    }
   }
 
   div[role="tablist"] {
@@ -36,10 +45,26 @@
       }
     }
   }
-  form [type="submit"] {
-    background-color: @light-grey;
-    .paddingY(1);
-    .paddingX(2);
+
+  form {
+    @media @mobile {
+      width: 100%;
+      display: flex;
+      .marginBottom(2);
+    }
+
+    [type="text"] {
+      @media @mobile {
+        width: 100%;
+        .paddingY(1.2);
+      }
+    }
+
+    [type="submit"] {
+      background-color: @light-grey;
+      .paddingY(1);
+      .paddingX(2);
+    }
   }
 }
 
@@ -49,12 +74,15 @@
     .marginTop(4);
     .marginBottom(1);
     .flex();
+    &:first-child {
+      color: @green;
+    }
 
     .restaurant-name {
       font-family: @text-font-family;
       font-weight: bold;
       max-width: 32rem;
-      width: 100%;
+      width: 80%;
     }
 
     .restaurant-data {
