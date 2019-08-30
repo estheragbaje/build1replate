@@ -8,21 +8,17 @@
     <title>Donor Sign up</title>
   </head>
   <body>
-    <div class="sign-up-container">
+    <div class="sign-up-container form-flex">
       <div class="text-section">
         <div class="content">
           <img src="img/replate-logo.png" alt="" />
           <h1>Donor Sign Up!</h1>
-          <h3>Thanks for your interest</h3>
-          <br />
-          <h3>
-            You’re just one step away from joining the Replate Community!
-          </h3>
+          <h3>You’re just one step away from joining the Replate Community!</h3>
         </div>
       </div>
       <div class="form-section">
         <h2>2. Your Business Location</h2>
-        <form>
+        <form onsubmit="goTo('./dashboard.html', event)">
           <label for="companyname">Company Name</label>
           <input type="text" id="companyname" name="companyname" />
 
@@ -36,5 +32,6 @@
         </form>
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>

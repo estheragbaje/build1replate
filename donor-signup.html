@@ -8,13 +8,11 @@
     <title>Donor Sign up</title>
   </head>
   <body>
-    <div class="sign-up-container">
+    <div class="sign-up-container form-flex">
       <div class="text-section">
         <div class="content">
           <img src="img/replate-logo.png" alt="" />
           <h1>Donor Sign Up!</h1>
-          <h3>Thanks for your interest</h3>
-          <br />
           <h3>
             You’re just one step away from joining the Replate Community!
           </h3>
@@ -22,7 +20,7 @@
       </div>
       <div class="form-section">
         <h2>1. Create Your Account</h2>
-        <form>
+        <form onsubmit="goTo('./donor-signup2.html', event)">
           <label for="fullname">Full Name</label>
           <input type="text" id="fullname" name="fullname" />
 
@@ -41,5 +39,6 @@
         </form>
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>

@@ -8,6 +8,26 @@
   font-size: 2rem;
   text-transform: uppercase;
 }
+.buttonStyleAccept {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: #ff502f;
+  color: #ffffff;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.buttonStyleReject {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: #f6f2f2;
+  color: black;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
 .buttonReset {
   border: none;
   margin: 0;
@@ -220,27 +240,26 @@ a {
 }
 @media (max-width: 500px) {
   .container {
-    width: 100%;
     max-width: 40rem;
   }
 }
-header {
+.header-content {
   background-color: #49beb7;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-header .container {
+.header-content .nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 @media (max-width: 500px) {
-  header .container {
+  .header-content .nav-bar {
     display: flex;
     flex-direction: column;
   }
 }
-header .container nav {
+.header-content .nav-bar nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -251,16 +270,16 @@ header .container nav {
   text-transform: uppercase;
 }
 @media (max-width: 500px) {
-  header .container nav {
+  .header-content .nav-bar nav {
     margin-top: 2rem;
   }
 }
-.dashboard .profile-pic {
+.header-content .nav-bar .profile-pic {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.dashboard .profile-pic h2 {
+.header-content .nav-bar .profile-pic h2 {
   font-size: 2.4rem;
   color: #ffffff;
   margin-right: 3rem;
@@ -365,13 +384,18 @@ footer p {
     margin-top: 3rem;
   }
 }
-.signup h1 {
+.signup .signup-headline {
   font-size: 4.8rem;
   text-align: center;
   color: #49beb7;
   font-weight: 600;
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+@media (max-width: 500px) {
+  .signup .signup-headline {
+    font-size: 2.8rem;
+  }
 }
 .signup h2 {
   font-size: 2rem;
@@ -382,14 +406,30 @@ footer p {
   margin-bottom: 2rem;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .signup h2 {
+    line-height: 2.5rem;
+  }
+}
 .signup .choose-category {
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+@media (max-width: 500px) {
+  .signup .choose-category {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .signup .choose-category .choose-category-options img {
   margin-bottom: 2rem;
+}
+@media (max-width: 500px) {
+  .signup .choose-category .choose-category-options img {
+    width: 100%;
+  }
 }
 .signup .choose-category .choose-category-options h3 {
   font-size: 2rem;
@@ -419,23 +459,61 @@ footer p {
   margin-left: 4rem;
   margin-right: 4rem;
 }
+@media (max-width: 500px) {
+  .signup .choose-category .choose-category-options button {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  .form-flex {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .sign-up-container {
   min-height: 100vh;
   display: flex;
+}
+@media (max-width: 500px) {
+  .sign-up-container {
+    min-height: 20vh;
+  }
 }
 .sign-up-container .text-section {
   background-color: #49beb7;
   max-width: 48rem;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .sign-up-container .text-section {
+    max-width: 50rem;
+    padding-bottom: 2rem;
+  }
+}
 .sign-up-container .text-section .content {
   margin: 0 auto;
   max-width: 35rem;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .sign-up-container .text-section .content {
+    margin-left: 10rem;
+    text-align: center;
+  }
+}
 .sign-up-container .text-section .content img {
   margin-top: 6rem;
   margin-bottom: 6rem;
+}
+@media (max-width: 500px) {
+  .sign-up-container .text-section .content img {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: auto;
+  }
 }
 .sign-up-container .text-section .content h1 {
   font-size: 3.2rem;
@@ -444,6 +522,12 @@ footer p {
   font-weight: 600;
   line-height: 1.2;
   margin-top: 4rem;
+}
+@media (max-width: 500px) {
+  .sign-up-container .text-section .content h1 {
+    margin-top: 0rem;
+    font-size: 2.8rem;
+  }
 }
 .sign-up-container .text-section .content h3 {
   font-size: 1.8rem;
@@ -459,6 +543,12 @@ footer p {
   margin-left: 10rem;
   margin-right: 10rem;
 }
+@media (max-width: 500px) {
+  .sign-up-container .form-section {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
 .sign-up-container .form-section h2 {
   font-size: 3.2rem;
   color: #49beb7;
@@ -467,6 +557,11 @@ footer p {
   line-height: 1.2;
   margin-top: 4rem;
   margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .sign-up-container .form-section h2 {
+    font-size: 2.8rem;
+  }
 }
 .sign-up-container .form-section label {
   font-family: "Raleway", sans-serif;
@@ -496,6 +591,12 @@ footer p {
   text-transform: uppercase;
   margin-top: 2rem;
 }
+@media (max-width: 500px) {
+  .sign-up-container .form-section button {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
 .main-dashboard {
   display: flex;
   justify-content: space-between;
@@ -504,6 +605,11 @@ footer p {
   margin: auto;
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+@media (max-width: 500px) {
+  .main-dashboard {
+    display: none;
+  }
 }
 .main-dashboard h1 {
   font-size: 3.2rem;
@@ -526,6 +632,11 @@ footer p {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   margin-top: 1rem;
+}
+@media (max-width: 500px) {
+  .main-dashboard img {
+    display: none;
+  }
 }
 .main-dashboard .icon-text {
   border: none;
@@ -610,6 +721,11 @@ footer p {
   text-align: left;
   margin-left: 3rem;
 }
+@media (max-width: 500px) {
+  .right-section table {
+    display: none;
+  }
+}
 .right-section table caption {
   margin-top: 5rem;
   text-align: left;
@@ -680,6 +796,213 @@ footer p {
   text-decoration: underline;
   color: #49beb7;
 }
+.for-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .for-mobile {
+    display: none;
+  }
+}
+.for-mobile h1 {
+  font-size: 2.8rem;
+  color: #49beb7;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 4rem;
+}
+.for-mobile h3 {
+  font-size: 2rem;
+  color: #49beb7;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+.for-mobile p {
+  font-size: 1.6rem;
+  color: #49beb7;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  margin-top: 0rem;
+}
+.for-mobile .icon-text {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  cursor: pointer;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  /* Remove excess padding and border in Firefox 4+ */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+.for-mobile .icon-text::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.for-mobile .icon-text .btn-icon {
+  color: #49beb7;
+  font-size: 1.2rem;
+}
+.for-mobile .icon-text .btn-label {
+  font-size: 1.6rem;
+  color: #49beb7;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  text-align: left;
+  margin-left: 2rem;
+}
+@media (min-width: 1000px) {
+  .hide {
+    display: none;
+  }
+}
+.hide .icon-text2 {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  cursor: pointer;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  /* Remove excess padding and border in Firefox 4+ */
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-top: 3rem;
+}
+.hide .icon-text2::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.hide .icon-text2 .btn-icon {
+  color: #ff502f;
+  font-size: 1.5rem;
+}
+.hide .icon-text2 .btn-label {
+  font-size: 2.4rem;
+  color: #ff502f;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin-left: 2rem;
+}
+.table-bg {
+  margin-top: 2rem;
+  background-color: #ebefd0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 1000px) {
+  .table-bg {
+    display: none;
+  }
+}
+.table-bg h2 {
+  font-size: 2rem;
+  color: #49beb7;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+.pickup-schedule {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.1rem solid #ebefd0;
+}
+@media (min-width: 1000px) {
+  .pickup-schedule {
+    display: none;
+  }
+}
+.pickup-schedule h3 {
+  font-size: 2rem;
+  color: #49beb7;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+.pickup-schedule h4 {
+  font-size: 1.8rem;
+  color: #49beb7;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.pickup-schedule .align-right {
+  text-align: right;
+}
+.pickup-schedule p {
+  font-size: 1.6rem;
+  color: #49beb7;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+.pickup-schedule button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  cursor: pointer;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  /* Remove excess padding and border in Firefox 4+ */
+}
+.pickup-schedule button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.pickup-schedule button:hover {
+  text-decoration: underline;
+  color: #ff502f;
+}
+.pickup-schedule button.edit {
+  margin-right: 2rem;
+}
+.pickup-schedule button.edit:hover {
+  text-decoration: underline;
+  color: #49beb7;
+}
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -689,7 +1012,10 @@ footer p {
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .modal-overlay .modal-content {
   background-color: white;
@@ -706,6 +1032,19 @@ footer p {
   font-weight: 600;
   text-align: center;
   line-height: 1.4;
+}
+.modal-overlay .modal-content h6 {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.modal-overlay .modal-content .food-image {
+  width: 100%;
+  display: block;
+  margin-bottom: 2rem;
 }
 .modal-overlay .modal-content label {
   font-family: "Raleway", sans-serif;
@@ -734,4 +1073,153 @@ footer p {
   font-size: 2rem;
   text-transform: uppercase;
   margin-top: 2rem;
+}
+@media (max-width: 500px) {
+  .modal-overlay .modal-content button {
+    width: 100%;
+  }
+}
+.modal-overlay .modal-content .buttonStyleAccept {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: #ff502f;
+  color: #ffffff;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.modal-overlay .modal-content .buttonStyleReject {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: #f6f2f2;
+  color: black;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.data-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+@media (max-width: 500px) {
+  .data-search {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.data-search h2 {
+  font-size: 2rem;
+  color: #49beb7;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.data-search input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: 0.1rem solid #ebefd0;
+}
+@media (max-width: 500px) {
+  .data-search input[type="text"] {
+    margin-top: 0rem;
+  }
+}
+.data-search div[role="tablist"] {
+  display: flex;
+}
+.data-search div[role="tablist"] button[role="tab"] {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: #ddd;
+  font-size: 15px;
+  min-width: 200px;
+}
+.data-search div[role="tablist"] button[role="tab"][aria-selected="true"] {
+  background: #49beb7;
+  color: #ffffff;
+}
+@media (max-width: 500px) {
+  .data-search form {
+    width: 100%;
+    display: flex;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .data-search form [type="text"] {
+    width: 100%;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+}
+.data-search form [type="submit"] {
+  background-color: #f6f2f2;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.details-container .restaurant-detail {
+  font-size: 1.6rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.details-container .restaurant-detail:first-child {
+  color: #49beb7;
+}
+.details-container .restaurant-detail .restaurant-name {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  max-width: 32rem;
+  width: 80%;
+}
+.details-container .restaurant-detail .restaurant-data {
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 0;
+  max-width: 32rem;
+  width: 100%;
+}
+.details-container .restaurant-detail .action {
+  flex: 1;
+  text-align: right;
+}
+.details-container .restaurant-detail .action button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  cursor: pointer;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  /* Remove excess padding and border in Firefox 4+ */
+  color: #ff502f;
+}
+.details-container .restaurant-detail .action button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.details-container .restaurant-detail .action button:hover {
+  text-decoration: underline;
 }

@@ -1,5 +1,5 @@
 .signup {
-  h1 {
+  .signup-headline {
     font-size: @heading-big;
     text-align: center;
     color: @headline-font-color;
@@ -7,7 +7,7 @@
     .marginY(3);
 
     @media @mobile {
-      font-size: @heading-small;
+      font-size: @mobile-heading;
     }
   }
 
@@ -18,6 +18,10 @@
     font-weight: 300;
     .marginY(2);
     text-align: center;
+
+    @media @mobile {
+      line-height: 2.5rem;
+    }
   }
 
   .choose-category {
@@ -32,6 +36,10 @@
     .choose-category-options {
       img {
         .marginBottom(2);
+
+        @media @mobile {
+          width: 100%;
+        }
       }
 
       h3 {
@@ -59,6 +67,12 @@
         font-size: @headline-mid;
         text-transform: uppercase;
         .marginX(4);
+
+        @media @mobile {
+          .marginX(0);
+          width: 100%;
+          .marginBottom(4);
+        }
       }
     }
   }

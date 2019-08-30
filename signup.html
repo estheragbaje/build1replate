@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="header-content">
-      <div class="container">
+      <div class="container nav-bar">
         <div>
           <img src="img/replate-logo.png" alt="" />
         </div>
@@ -25,7 +25,7 @@
     <div class="container">
       <main class="signup">
         <div>
-          <h1>Sign Up!</h1>
+          <h1 class="signup-headline">Sign Up!</h1>
           <h2>
             Choose your category below and sign up to get started on Replate
           </h2>
@@ -35,13 +35,15 @@
             <img src="img/sign-up1.png" alt="" />
             <h3>I'm a business owner</h3>
             <p>I want to donate food</p>
-            <button>Sign up here</button>
+            <button onclick="goTo('./donor-signup.html')">Sign up here</button>
           </div>
           <div class="choose-category-options">
             <img src="img/sign-up2.png" alt="" />
             <h3>I'm a volunteer</h3>
             <p>I want to receive donations</p>
-            <button>Sign up here</button>
+            <button onclick="goTo('./volunteer-signup.html')">
+              Sign up here
+            </button>
           </div>
           <div class="choose-category-options">
             <img src="img/sign-up3.png" alt="" />
@@ -57,5 +59,6 @@
         ©2019 Copyright Esther Agbaje
       </p>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>

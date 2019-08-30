@@ -1,0 +1,105 @@
+.data-search {
+  .flex();
+  .marginTop(2);
+  .marginBottom(4);
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  h2 {
+    font-size: @headline-mid;
+    color: @regular-font-color;
+    font-family: @text-font-family;
+    font-weight: 600;
+    .marginTop(2);
+    .marginBottom(5);
+  }
+
+  input[type="text"] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: 0.1rem solid @cream;
+
+    @media @mobile {
+      .marginTop(0);
+    }
+  }
+
+  div[role="tablist"] {
+    display: flex;
+
+    button[role="tab"] {
+      .paddingX(2);
+      .paddingY(1);
+
+      background: #ddd;
+      font-size: 15px;
+      min-width: 200px;
+
+      &[aria-selected="true"] {
+        background: @green;
+        color: @white;
+      }
+    }
+  }
+
+  form {
+    @media @mobile {
+      width: 100%;
+      display: flex;
+      .marginBottom(2);
+    }
+
+    [type="text"] {
+      @media @mobile {
+        width: 100%;
+        .paddingY(1.2);
+      }
+    }
+
+    [type="submit"] {
+      background-color: @light-grey;
+      .paddingY(1);
+      .paddingX(2);
+    }
+  }
+}
+
+.details-container {
+  .restaurant-detail {
+    font-size: @text-default;
+    .marginTop(4);
+    .marginBottom(1);
+    .flex();
+    &:first-child {
+      color: @green;
+    }
+
+    .restaurant-name {
+      font-family: @text-font-family;
+      font-weight: bold;
+      max-width: 32rem;
+      width: 80%;
+    }
+
+    .restaurant-data {
+      font-family: @text-font-family;
+      padding-bottom: 0;
+
+      max-width: 32rem;
+      width: 100%;
+    }
+
+    .action {
+      flex: 1;
+      text-align: right;
+
+      button {
+        .textButtonStyle();
+      }
+    }
+  }
+}
